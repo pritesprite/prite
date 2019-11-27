@@ -3,10 +3,10 @@ import random
 import time
 
 name = input("What is your name: ")
-print("Welcome " + name + "! Best of Luck...")
-time.sleep(2)
-print("Test begins now...\n")
-time.sleep(2)
+print("Hello " + name + "This is hangman game created by Narutchai")
+time.sleep(0.5)
+print("Game begins now\n")
+time.sleep(0.5)
 
 
 def main():
@@ -16,7 +16,7 @@ def main():
     global already_guessed
     global length
     global play_again
-    secret_word = ["ball", "doll", "golf", "secret", "thief"]
+    secret_word = ["boy", "girl", "python", "secret", "chemistry"]
     word = random.choice(secret_word)
     length = len(word)
     count = 0
